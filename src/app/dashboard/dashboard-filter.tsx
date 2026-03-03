@@ -4,7 +4,10 @@ import { useRouter, useSearchParams } from 'next/navigation'
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select'
 import { Label } from '@/components/ui/label'
 
-const YEARS = ['2025', '2024', '2023', '2022']
+// Generate an array of years dynamically, e.g., from 2010 to current year + 5
+const currentYearNum = new Date().getFullYear()
+const YEARS = Array.from({ length: 20 }, (_, i) => (currentYearNum - 5 + i).toString()).sort((a, b) => b.localeCompare(a))
+
 const MONTHS = [
     { value: 'all', label: 'All Months' },
     { value: '1', label: 'January' },
