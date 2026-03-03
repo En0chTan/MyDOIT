@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Zenith Finance",
+  title: "MyDOIT",
   description: "AI-powered personal finance management application",
 };
 
