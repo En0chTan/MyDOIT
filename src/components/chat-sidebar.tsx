@@ -78,7 +78,7 @@ export function ChatSidebar() {
     }
 
     return (
-        <aside className="w-80 bg-card border-l flex flex-col hidden lg:flex h-full relative z-40">
+        <aside className="fixed inset-0 z-50 w-full lg:relative lg:w-80 lg:z-40 bg-card border-l flex flex-col h-full">
             <div className="flex justify-between h-14 items-center border-b px-4 font-bold text-lg bg-primary text-primary-foreground flex-shrink-0">
                 <div className="flex items-center">
                     <MessageSquare className="h-5 w-5 mr-3" />
